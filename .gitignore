@@ -1,3 +1,10 @@
 .venv/
 .ipynb_checkpoints/
-data/
+__pycache__/
+
+# Datos originales: se conservan en local (no se suben a GitHub por tamaño)
+data/raw/*
+!data/raw/.gitkeep
+
+# Tabla maestra (~100 MB): se regenera ejecutando pandas_labs.ipynb
+data/processed/instacart_maestra.parquet
